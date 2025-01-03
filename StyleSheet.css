@@ -1,0 +1,305 @@
+/* PALLETE */
+/* https://www.schemecolor.com/pink-peach.php */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+  
+html {
+    /* font-size: 10px; */
+    /* 10px / 16px = 0.625 = 62.5% */
+    /* Percentage of user's browser font-size setting */
+    font-size: 62.5%;
+    overflow-x:hidden;
+    /* makes scrolling smooth when button is pressed 
+    Dost not work on safari */
+    scroll-behavior: smooth;
+}
+  
+body {
+    font-family: "Rubik", sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    color: white;
+    /* only works if there is nothing absolutely positioned next to body */
+    overflow-x:hidden;
+}
+/* NAVIGATION BAR */
+.navigation-bar{
+    /* background-color: #111; */
+    background-image: linear-gradient(to right,#FF9899,#FFCBA5,#FDE5B4);
+    
+}
+.navigation-bar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+.navigation-bar li{
+    /* display: inline; */
+    float: right;
+}
+
+
+.navigation-bar a{
+    display: block;
+    padding: 8px;
+    /* background-color: aliceblue; */
+    text-decoration: none;
+    color: white;
+}
+
+/* .navigation-bar a:first-child{
+    color: Black;
+} */
+
+.navigation-bar li:hover:not(.active){
+    background-color: #FFA7A6;
+}
+
+.active{
+    background-color: #FFCBC4;
+    /* background-color: purple; */
+}
+/* NAVIGATION BAR */
+
+/* SECTION HOME */
+.home{
+    max-width: 100%;
+    height: 70rem;
+    padding: 0.3.2rem;
+    background-image: linear-gradient(to right,#FF9899,#FFCBA5,#FDE5B4);
+}
+
+.start-text{
+    /* display: flex; */
+    padding: 18.0rem;
+    font-size: 5.0rem;
+}
+.start-text h1{
+    color: #ffffff;
+    font-size: 5.0rem;
+    margin-bottom: 2.4rem;
+}
+.start-text p{
+    margin-bottom: 2.4rem;
+    font-size: 2.0rem;
+}
+.start-text a{
+    margin-bottom: 2.4rem;
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-decoration: none;
+    /* background-color: #1a4473; */
+}
+.start-text a:hover,
+.start-text a:active{
+    /* background-color: #FFA7A6; */
+    text-decoration: underline;
+    opacity: 1;
+    /* color: #1a4473; */
+   
+}
+
+/* SECTION HOME */
+
+/* SECTION PROJECTS */
+
+.project-section{
+    color: #000;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+.project-section h1{
+    font-size: 30px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-bottom: 2px dotted black;
+}
+.project-container{
+    /* background-color: red; */
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+.project-1 h3{
+  align-items: center;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 500px;
+  font-size: 20px;
+}
+
+.project-1 p{
+    margin-bottom: 10px;
+}
+
+
+/* SECTION PROJECTS */
+
+/* CONTACT ME SECTION */
+.contact-container{
+  flex-grow: 1;
+  /* background-color: #FF9899; */
+  border: 70px solid white;
+  border-radius: 10px;
+  padding: 16px 0px 0px 0px;
+}
+.container{
+    border: 50px solid FF9899;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    /* background-image: linear-gradient(to right,#FF9899,#FFCBA5,#FDE5B4); */
+    background-color: #FF9899;
+    /* display: flex;
+    flex-flow: column wrap;
+    flex-direction: row;
+    justify-content: center; */
+    gap: 4em;
+    align-content: center;
+    /* padding-right:0px; */
+}
+.container img{
+  /* border: 3px solid white; */
+  /* border-radius: 20px; */
+  width: 50%;
+  height: 100%;
+  object-fit: fill;
+  /* margin-left: 180px; */
+  
+}
+.contact-container h1{
+    margin-top: 20px;
+    text-align: center;
+    color: #000;
+    font-size: 4rem;
+    font-weight: normal;
+}
+
+input[type=text],select,textarea{
+    width:100%;
+    padding:12px;
+    border: none;
+    border-bottom: 3px solid black;
+    resize: vertical;
+    background-color: #FF9899;
+    /* background-color:  background-image:linear-gradient(to right,#FF9899,#FFCBA5,#FDE5B4); */
+
+}
+input[type=text],select,textarea:focus{
+    outline: none;
+   
+}
+input[type=submit] {
+    /* background-color: #FFA7A6; */
+    background-color: #000;
+    color: white;
+    padding: 12px 12rem;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+input[type=submit]:hover {
+    background-color: #FFCBA5;
+}
+#subject{
+    width: 100%;
+}
+textarea{
+    width: 100%;
+    /* height: 10px; */
+    min-height: 5px;
+    max-height: 10rem;
+    padding: 12px 10px;
+    margin-bottom: 3rem;
+    /* size: 1rem; */
+    resize: none;
+}
+
+/* CONTACT ME SECTION */
+
+/* END SECTION START*/
+footer{
+    /* background-color: #111; */
+    background-color: white;
+    height: auto;
+    /* padding-top: 0.0rem; */
+    /* color: #fff; */
+    color: #000;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    line-height: 2rem;
+}
+.social{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 1rem 0;
+    font-size: 2.0rem;
+    word-spacing: 1.0rem;
+}
+.social li{
+    margin: 0 1.0rem;
+}
+.social a{
+    text-decoration: none;
+    /* color:#fff; */
+    color: black;
+}
+.socials a i{
+    font-size: 3.0rem;
+    transition: color 0.3s ease;
+}
+.social a:hover,
+.social a:active{
+    color:#FF9899;
+}
+/*  */
+.footer-options{
+    text-align: center;
+    word-spacing: 0.5rem;
+}
+.footer-options a:hover{
+   color: #FF9899;
+}
+
+
+/* Botom footer */
+.footer-bottom{
+    /* background: #000; */
+    padding: 1.0rem 0;
+    text-align: center;
+
+}
+.footer-bottom p{
+    font-size: 1.0rem;
+    word-spacing: 0.2rem;
+    text-transform: capitalize;
+}
+/* END SECTION END*/
